@@ -1,0 +1,44 @@
+/* El siguiente bloque se puede incluir en un custom.scss */
+/* hacer las personalizaciones */ 
+
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+
+$font-family-sans-serif: 'Raleway', sans-serif;
+$component-active-bg:#E56353;
+// THEME COLORS
+
+$theme-nuevo: (
+    'white-transparent':rgba(241, 239, 239, 0.115),
+    'white-transparent-0':rgba(241, 239, 239, 0),
+    'snow':#FAFAFA,
+    'quick':#A0A0A0,
+    'jelly':#E56353,
+    'salmon': #E97F72,
+    'pastel': #F0A9A1,
+    'granite': #686963,
+    'taupe': #91918D,
+    'gray': #BABAB8
+);
+
+// TOOLTIPS 
+
+$tooltip-bg: #A0A0A0;
+
+// BUTTONS
+
+$enable-shadows:true;
+$enable-gradients:true;
+
+
+$btn-padding-x: 3em;
+$btn-padding-x-sm: 2em;
+$btn-padding-x-lg: 4em;
+
+
+// DECLARATION 
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins';
+
+$theme-colors: map-merge($theme-colors, $theme-nuevo);

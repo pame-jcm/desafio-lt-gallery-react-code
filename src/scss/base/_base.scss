@@ -1,0 +1,15 @@
+*,*::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.triangulo-tricolor{
+    //border-left: 100vw solid #393c4b;
+    //border-bottom: 100vh solid #b94953; 
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+body{
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
